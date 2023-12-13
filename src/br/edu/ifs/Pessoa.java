@@ -6,9 +6,9 @@ public class Pessoa {
     private String dataNascimento;
     private String localNascimento;
     private char sexo;
-    private int cpf; 
+    private String cpf; 
 
-    public Pessoa(int cpf) {
+    public Pessoa(String cpf) {
         super();
         this.cpf = cpf;
     }
@@ -41,10 +41,10 @@ public class Pessoa {
         return this.sexo;
     }  
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }    
-    public int getCpf() {
+    public String getCpf() {
         return this.cpf;
     }    
 

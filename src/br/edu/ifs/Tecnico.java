@@ -6,7 +6,7 @@ public class Tecnico extends Pessoa {
     private String funcao;
     private String anoDeEntrada;
 
-    public Tecnico(int cpf) {
+    public Tecnico(String cpf) {
         super(cpf);
     }
 

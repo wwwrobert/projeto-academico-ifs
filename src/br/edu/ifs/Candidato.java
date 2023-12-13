@@ -6,7 +6,7 @@ public class Candidato extends Pessoa {
     private int codigoVaga;
     private int pontuacao;
 
-    public Candidato(int cpf) {
+    public Candidato(String cpf) {
         super(cpf);
     }
 

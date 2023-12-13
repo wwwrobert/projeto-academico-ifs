@@ -20,7 +20,7 @@ public class App {
 		String nome;
 		String dataNasc;
 		String locDeNasc;
-		int cpf;
+		String cpf;
 		char sexo;
 		String formacao;
 
@@ -42,7 +42,7 @@ public class App {
 					System.out.println(" ");
 
 					System.out.println("Digite o CPF:");
-					cpf = scanner.nextInt();
+					cpf = scanner.next();
 
 					Aluno aluno = new Aluno(cpf);
 
@@ -88,7 +88,7 @@ public class App {
 					System.out.println(" ");
 
 					System.out.println("Digite o CPF:");
-					cpf = scanner.nextInt();
+					cpf = scanner.next();
 
 					System.out.println("Digite a formação do professor: ");
 					formacao = scanner.next();
@@ -132,7 +132,7 @@ public class App {
 					System.out.println(" ");
 
 					System.out.println("Digite o CPF:");
-					cpf = scanner.nextInt();
+					cpf = scanner.next();
 
 					Psicologo psicologo = new Psicologo(cpf);
 
@@ -178,7 +178,7 @@ public class App {
 					System.out.println(" ");
 
 					System.out.println("Digite o CPF:");
-					cpf = scanner.nextInt();
+					cpf = scanner.next();
 
 					Pedagogo pedagogo = new Pedagogo(cpf);
 
@@ -220,7 +220,7 @@ public class App {
 					System.out.println(" ");
 
 					System.out.println("Digite o CPF:");
-					cpf = scanner.nextInt();
+					cpf = scanner.next();
 
 					Tecnico tecnico = new Tecnico(cpf);
 
@@ -269,7 +269,7 @@ public class App {
 					System.out.println(" ");
 
                     System.out.println("Digite o CPF:");
-					cpf = scanner.nextInt();
+					cpf = scanner.next();
 
 					Candidato candidato = new Candidato(cpf);
 
@@ -318,7 +318,7 @@ public class App {
 					System.out.println(" ");
 
 					System.out.println("Digite o CPF:");
-					cpf = scanner.nextInt();
+					cpf = scanner.next();
 
 					Responsavel responsavel = new Responsavel(cpf);
 
@@ -363,7 +363,7 @@ public class App {
 					System.out.println(" ");
 
 					System.out.println("Digite o CPF:");
-					cpf = scanner.nextInt();
+					cpf = scanner.next();
 
 					Zelador zelador = new Zelador(cpf);
 
@@ -408,7 +408,7 @@ public class App {
 					System.out.println(" ");
 
 					System.out.println("Digite o CPF:");
-					cpf = scanner.nextInt();
+					cpf = scanner.next();
 
 					System.out.println("Digite a formação do monitor: ");
 					formacao = scanner.next();
@@ -460,7 +460,7 @@ public class App {
 					System.out.println(" ");
 
 					System.out.println("Digite o CPF:");
-					cpf = scanner.nextInt();
+					cpf = scanner.next();
 
 					Secretaria secretaria = new Secretaria(cpf);
 

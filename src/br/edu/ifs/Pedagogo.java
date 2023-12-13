@@ -4,7 +4,7 @@ public class Pedagogo extends Pessoa {
     
     private int registro;
 
-    public Pedagogo(int cpf) {
+    public Pedagogo(String cpf) {
         super(cpf);
     }    
 

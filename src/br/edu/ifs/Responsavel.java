@@ -5,7 +5,7 @@ public class Responsavel extends Pessoa {
     private String parentesco;
     private double renda;
 
-    public Responsavel(int cpf) {
+    public Responsavel(String cpf) {
         super(cpf);
     } 
 

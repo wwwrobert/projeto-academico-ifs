@@ -6,7 +6,7 @@ public class Secretaria extends Pessoa {
     private String funcaoS;
     private String turno;
 
-    public Secretaria(int cpf) {
+    public Secretaria(String cpf) {
         super(cpf);
     }
 

@@ -5,7 +5,7 @@ public class Professor extends Pessoa {
     private String formacao;
     private int quantDisciplinas;
 
-    public Professor(int cpf, String formacao) {
+    public Professor(String cpf, String formacao) {
         super(cpf);
         this.formacao = formacao;
     }

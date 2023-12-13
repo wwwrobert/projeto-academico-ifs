@@ -6,7 +6,7 @@ public class Monitor extends Professor {
     private String periodo;
     private String disciplina;
 
-    public Monitor(int cpf, String formacao) {
+    public Monitor(String cpf, String formacao) {
         super(cpf, formacao);
     }
 
