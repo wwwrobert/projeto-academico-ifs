@@ -6,6 +6,9 @@ public class Monitor extends Professor {
     private String periodo;
     private String disciplina;
 
+    public Monitor(int cpf, String formacao) {
+        super(cpf, formacao);
+    }
 
     public void setSalario(Double salario) {
         this.salario = salario;

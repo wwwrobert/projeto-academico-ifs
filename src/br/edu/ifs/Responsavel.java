@@ -5,6 +5,10 @@ public class Responsavel extends Pessoa {
     private String parentesco;
     private double renda;
 
+    public Responsavel(int cpf) {
+        super(cpf);
+    } 
+
     public void setParentesco(String parentesco) {
         this.parentesco = parentesco;
     }

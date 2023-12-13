@@ -5,6 +5,10 @@ public class Zelador extends Pessoa {
     private String setorResponsavel;
     private boolean possuiChave;
 
+    public Zelador(int cpf) {
+        super(cpf);
+    }
+
     public void setSetorResponsavel(String setorResponsavel) {
         this.setorResponsavel = setorResponsavel;    
     }    

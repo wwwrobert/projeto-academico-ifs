@@ -6,6 +6,10 @@ public class Candidato extends Pessoa {
     private int codigoVaga;
     private int pontuacao;
 
+    public Candidato(int cpf) {
+        super(cpf);
+    }
+
     public String getDataConcurso() {
         return dataConcurso;
     }

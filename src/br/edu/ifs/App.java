@@ -20,8 +20,9 @@ public class App {
 		String nome;
 		String dataNasc;
 		String locDeNasc;
-		long cpf;
+		int cpf;
 		char sexo;
+		String formacao;
 
 		Scanner scanner = new Scanner(System.in);
 		int escolha;
@@ -40,7 +41,10 @@ public class App {
 					System.out.println("==================");
 					System.out.println(" ");
 
-					Aluno aluno = new Aluno();
+					System.out.println("Digite o CPF:");
+					cpf = scanner.nextInt();
+
+					Aluno aluno = new Aluno(cpf);
 
 					System.out.println("Digite o nome do aluno:");
 					nome = scanner.next();
@@ -57,10 +61,6 @@ public class App {
 					System.out.println("Digite o sexo do aluno:");
 					sexo = scanner.next().charAt(0);
 					aluno.setSexo(sexo);
-
-					System.out.println("Digite o CPF:");
-					cpf = scanner.nextLong();
-					aluno.setCpf(cpf);
 
 					System.out.println("Digite a primeira nota do aluno: ");
 					double nota1 = scanner.nextDouble();
@@ -87,7 +87,13 @@ public class App {
 					System.out.println("======================");
 					System.out.println(" ");
 
-					Professor professor = new Professor();
+					System.out.println("Digite o CPF:");
+					cpf = scanner.nextInt();
+
+					System.out.println("Digite a formação do professor: ");
+					formacao = scanner.next();
+
+					Professor professor = new Professor(cpf, formacao);
 
 					System.out.println("Digite o nome do professor:");
 					nome = scanner.next();
@@ -104,14 +110,6 @@ public class App {
 					System.out.println("Digite o sexo do professor:");
 					sexo = scanner.next().charAt(0);
 					professor.setSexo(sexo);
-
-					System.out.println("Digite o CPF:");
-					cpf = scanner.nextLong();
-					professor.setCpf(cpf);
-
-					System.out.println("Digite a formação do professor: ");
-					String formacao = scanner.next();
-					professor.setFormacao(formacao);
 
 					System.out.println("Digite a quantidade de disciplinas: ");
 					int disciplinas = scanner.nextInt();
@@ -132,7 +130,11 @@ public class App {
 					System.out.println("| CADASTRO PSICOLÓGO |");
 					System.out.println("======================");
 					System.out.println(" ");
-					Psicologo psicologo = new Psicologo();
+
+					System.out.println("Digite o CPF:");
+					cpf = scanner.nextInt();
+
+					Psicologo psicologo = new Psicologo(cpf);
 
 					System.out.println("Digite o nome do psicólogo: ");
 					nome = scanner.next();
@@ -149,10 +151,6 @@ public class App {
 					System.out.println("Digite o sexo do psicólogo:");
 					sexo = scanner.next().charAt(0);
 					psicologo.setSexo(sexo);
-
-					System.out.println("Digite o CPF:");
-					cpf = scanner.nextLong();
-					psicologo.setCpf(cpf);
 
 					System.out.println("Digite a especialidade do psicólogo:");
 					String especialidade = scanner.next();
@@ -179,7 +177,10 @@ public class App {
 					System.out.println("======================");
 					System.out.println(" ");
 
-					Pedagogo pedagogo = new Pedagogo();
+					System.out.println("Digite o CPF:");
+					cpf = scanner.nextInt();
+
+					Pedagogo pedagogo = new Pedagogo(cpf);
 
 					System.out.println("Digite o nome do pedagogo: ");
 					nome = scanner.next();
@@ -196,10 +197,6 @@ public class App {
 					System.out.println("Digite o sexo do pedagogo:");
 					sexo = scanner.next().charAt(0);
 					pedagogo.setSexo(sexo);
-
-					System.out.println("Digite o CPF:");
-					cpf = scanner.nextLong();
-					pedagogo.setCpf(cpf);
 
 					System.out.println("Informe o Registro do pedagogo:");
 					int registro = scanner.nextInt();
@@ -222,7 +219,10 @@ public class App {
 					System.out.println("====================");
 					System.out.println(" ");
 
-					Tecnico tecnico = new Tecnico();
+					System.out.println("Digite o CPF:");
+					cpf = scanner.nextInt();
+
+					Tecnico tecnico = new Tecnico(cpf);
 
 					System.out.println("Digite o nome do técnico: ");
 					nome = scanner.next();
@@ -239,10 +239,6 @@ public class App {
 					System.out.println("Digite o sexo do técnico:");
 					sexo = scanner.next().charAt(0);
 					tecnico.setSexo(sexo);
-
-					System.out.println("Digite o CPF:");
-					cpf = scanner.nextLong();
-					tecnico.setCpf(cpf);
 
 					System.out.println("Digite a função do técnico:");
 					String funcao = scanner.next();
@@ -272,7 +268,10 @@ public class App {
 					System.out.println("======================");
 					System.out.println(" ");
 
-					Candidato candidato = new Candidato();
+                    System.out.println("Digite o CPF:");
+					cpf = scanner.nextInt();
+
+					Candidato candidato = new Candidato(cpf);
 
 					System.out.println("Digite o nome do candidato: ");
 					nome = scanner.next();
@@ -289,10 +288,6 @@ public class App {
 					System.out.println("Digite o sexo do candidato:");
 					sexo = scanner.next().charAt(0);
 					candidato.setSexo(sexo);
-
-					System.out.println("Digite o CPF:");
-					cpf = scanner.nextLong();
-					candidato.setCpf(cpf);
 
 					System.out.println("Digite a data do concurso:");
 					String dataConcurso = scanner.next();
@@ -322,7 +317,10 @@ public class App {
 					System.out.println("========================");
 					System.out.println(" ");
 
-					Responsavel responsavel = new Responsavel();
+					System.out.println("Digite o CPF:");
+					cpf = scanner.nextInt();
+
+					Responsavel responsavel = new Responsavel(cpf);
 
 					System.out.println("Digite o nome do responsável: ");
 					nome = scanner.next();
@@ -339,10 +337,6 @@ public class App {
 					System.out.println("Digite o sexo do responsável:");
 					sexo = scanner.next().charAt(0);
 					responsavel.setSexo(sexo);
-
-					System.out.println("Digite o CPF:");
-					cpf = scanner.nextLong();
-					responsavel.setCpf(cpf);
 
 					System.out.println("Digite o parentesco do responsável:");
 					String parentesco = scanner.next();
@@ -368,7 +362,10 @@ public class App {
 					System.out.println("====================");
 					System.out.println(" ");
 
-					Zelador zelador = new Zelador();
+					System.out.println("Digite o CPF:");
+					cpf = scanner.nextInt();
+
+					Zelador zelador = new Zelador(cpf);
 
 					System.out.println("Digite o nome do zelador: ");
 					nome = scanner.next();
@@ -385,10 +382,6 @@ public class App {
 					System.out.println("Digite o sexo do zelador:");
 					sexo = scanner.next().charAt(0);
 					zelador.setSexo(sexo);
-
-					System.out.println("Digite o CPF:");
-					cpf = scanner.nextLong();
-					zelador.setCpf(cpf);
 
 					System.out.println("Digite o setor do zelador: ");
 					String setorResponsavel = scanner.next();
@@ -414,7 +407,13 @@ public class App {
 					System.out.println("====================");
 					System.out.println(" ");
 
-					Monitor monitor = new Monitor();
+					System.out.println("Digite o CPF:");
+					cpf = scanner.nextInt();
+
+					System.out.println("Digite a formação do monitor: ");
+					formacao = scanner.next();
+				
+					Monitor monitor = new Monitor(cpf, formacao);
 
 					System.out.println("Digite o nome do monitor: ");
 					nome = scanner.next();
@@ -431,10 +430,6 @@ public class App {
 					System.out.println("Digite o sexo do monitor:");
 					sexo = scanner.next().charAt(0);
 					monitor.setSexo(sexo);
-
-					System.out.println("Digite o CPF:");
-					cpf = scanner.nextLong();
-					monitor.setCpf(cpf);
 
 					System.out.println("Digite o salário do monitor: ");
 					double salario = scanner.nextDouble();
@@ -464,7 +459,10 @@ public class App {
 					System.out.println("=======================");
 					System.out.println(" ");
 
-					Secretaria secretaria = new Secretaria();
+					System.out.println("Digite o CPF:");
+					cpf = scanner.nextInt();
+
+					Secretaria secretaria = new Secretaria(cpf);
 
 					System.out.println("Digite o nome da secretária: ");
 					nome = scanner.next();
@@ -481,10 +479,6 @@ public class App {
 					System.out.println("Digite o sexo da secretária:");
 					sexo = scanner.next().charAt(0);
 					secretaria.setSexo(sexo);
-
-					System.out.println("Digite o CPF:");
-					cpf = scanner.nextLong();
-					secretaria.setCpf(cpf);
 
 					System.out.println("Digite o número do ramal:");
 					int ramal = scanner.nextInt();

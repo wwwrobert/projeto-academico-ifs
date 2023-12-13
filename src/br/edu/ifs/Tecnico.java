@@ -6,6 +6,10 @@ public class Tecnico extends Pessoa {
     private String funcao;
     private String anoDeEntrada;
 
+    public Tecnico(int cpf) {
+        super(cpf);
+    }
+
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }

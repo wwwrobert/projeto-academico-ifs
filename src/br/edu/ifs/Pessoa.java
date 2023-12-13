@@ -6,7 +6,12 @@ public class Pessoa {
     private String dataNascimento;
     private String localNascimento;
     private char sexo;
-    private long cpf; 
+    private int cpf; 
+
+    public Pessoa(int cpf) {
+        super();
+        this.cpf = cpf;
+    }
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -36,10 +41,10 @@ public class Pessoa {
         return this.sexo;
     }  
 
-    public void setCpf(long cpf) {
+    public void setCpf(int cpf) {
         this.cpf = cpf;
     }    
-    public long getCpf() {
+    public int getCpf() {
         return this.cpf;
     }    
 

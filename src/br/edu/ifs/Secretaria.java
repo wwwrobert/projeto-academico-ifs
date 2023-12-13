@@ -6,6 +6,10 @@ public class Secretaria extends Pessoa {
     private String funcaoS;
     private String turno;
 
+    public Secretaria(int cpf) {
+        super(cpf);
+    }
+
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
     }

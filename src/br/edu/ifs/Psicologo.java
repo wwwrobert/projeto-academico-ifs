@@ -5,6 +5,10 @@ public class Psicologo extends Pessoa {
     private int crp;
     private String especialidade;
 
+    public Psicologo(int cpf) {
+        super(cpf);
+    }    
+
     public void setCrp(int crp) {
         this.crp = crp;
     }
