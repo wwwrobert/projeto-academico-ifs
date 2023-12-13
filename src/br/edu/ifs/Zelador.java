@@ -26,8 +26,12 @@ public class Zelador extends Pessoa {
     }
 
     @Override
+    public double calcularRemuneracao() {
+        return 0;
+    }
+
+    @Override
 	public String toString() {
-		return " Zelador" + super.toString() + "Setor = " + setorResponsavel + "\nPossui chave = " + possuiChave + "\n";
-	}
-    
+		return " Zelador" + super.toString() + "Setor = " + setorResponsavel + "\nPossui chave = " + possuiChave + "\nRemuneração = " + calcularRemuneracao() + "\n";
+	}  
 }

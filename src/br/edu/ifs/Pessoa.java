@@ -1,6 +1,6 @@
 package br.edu.ifs;
 
-public class Pessoa {
+public abstract class Pessoa {
 
     private String nome;
     private String dataNascimento;
@@ -47,6 +47,8 @@ public class Pessoa {
     public String getCpf() {
         return this.cpf;
     }    
+
+    public abstract double calcularRemuneracao();
 
     @Override
 	public String toString() {

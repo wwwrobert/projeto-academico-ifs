@@ -24,7 +24,12 @@ public class Psicologo extends Pessoa {
     }
 
     @Override
+    public double calcularRemuneracao() {
+        return 0;
+    }
+
+    @Override
 	public String toString() {
-		return " Psicologo" + super.toString() + "CRP = " + crp + "\nEspecialidade = " + especialidade + "\n";
+		return " Psicologo" + super.toString() + "CRP = " + crp + "\nEspecialidade = " + especialidade + "\nRemuneração = " + calcularRemuneracao() + "\n";
 	}
 }

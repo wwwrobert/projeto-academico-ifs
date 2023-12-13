@@ -115,6 +115,10 @@ public class App {
 					int disciplinas = scanner.nextInt();
 					professor.setQuantDisciplinas(disciplinas);
 
+					System.out.println("Digite o tempo de serviço: ");
+					double tempoServico = scanner.nextDouble();
+					professor.setTempoServico(tempoServico);
+
 					listaProfessor.add(professor);
 					break;
 				case 4:

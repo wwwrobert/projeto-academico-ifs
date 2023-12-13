@@ -32,7 +32,12 @@ public class Tecnico extends Pessoa {
     }
 
     @Override
+    public double calcularRemuneracao() {
+        return 0;
+    }
+
+    @Override
 	public String toString() {
-		return " Tecnico" + super.toString() + "Cargo = " + cargo + "\nFunção = " + funcao + "\nAno de Entrada = " + anoDeEntrada + "\n";
+		return " Tecnico" + super.toString() + "Cargo = " + cargo + "\nFunção = " + funcao + "\nAno de Entrada = " + anoDeEntrada + "\nRemuneração = " + calcularRemuneracao() + "\n";
 	}
 }

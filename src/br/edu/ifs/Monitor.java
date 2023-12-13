@@ -32,7 +32,12 @@ public class Monitor extends Professor {
     }
 
     @Override
+    public double calcularRemuneracao() {
+        return 0;
+    }
+
+    @Override
     public String toString() {
-        return " Monitor" + super.toString() + "Salário = " + salario + "\nPeríodo = " + periodo + "\nDisciplina = " + disciplina + "\n";
+        return " Monitor" + super.toString() + "Salário = " + salario + "\nPeríodo = " + periodo + "\nDisciplina = " + disciplina + "\nRemuneração = " + calcularRemuneracao() + "\n";
     }
 }

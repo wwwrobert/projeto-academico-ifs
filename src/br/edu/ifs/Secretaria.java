@@ -38,10 +38,15 @@ public class Secretaria extends Pessoa {
     public String getTurno() {
         return turno;
     }
+
+    @Override
+    public double calcularRemuneracao() {
+        return 0;
+    }
     
     @Override
     public String toString() {
-        return " Secretaria" + super.toString() + "Departamento = " + departamento + "\nRamal = " + ramal + "\nFunção = " + funcaoS + "\nTurno = " + turno + "\n";
+        return " Secretaria" + super.toString() + "Departamento = " + departamento + "\nRamal = " + ramal + "\nFunção = " + funcaoS + "\nTurno = " + turno + "\nRemuneração = " + calcularRemuneracao() + "\n";
     }
 
 }

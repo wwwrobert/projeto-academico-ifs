@@ -24,7 +24,12 @@ public class Responsavel extends Pessoa {
     }
 
     @Override
+    public double calcularRemuneracao() {
+        return 0;
+    }
+
+    @Override
 	public String toString() {
-		return " Responsável" + super.toString() + "Parentesco = " + parentesco + "\nRenda = " + renda + "\n";
+		return " Responsável" + super.toString() + "Parentesco = " + parentesco + "\nRenda = " + renda + "\nRemuneração = " + calcularRemuneracao() + "\n";
 	}
 }

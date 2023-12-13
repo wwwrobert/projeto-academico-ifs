@@ -16,7 +16,12 @@ public class Pedagogo extends Pessoa {
     }
 
     @Override
+    public double calcularRemuneracao() {
+        return 0;
+    }
+
+    @Override
 	public String toString() {
-		return " Pedagogo" + super.toString() + "Registro = " + registro + "\n";
+		return " Pedagogo" + super.toString() + "Registro = " + registro + "\nRemuneração = " + calcularRemuneracao() + "\n";
 	}
 }
